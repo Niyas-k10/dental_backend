@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 from django.http import HttpResponse
 
-from rest_framework_simplejwt.tokens import RefreshToken
+# from rest_framework_simplejwt.tokens import RefreshToken
 
 User = get_user_model()
 
