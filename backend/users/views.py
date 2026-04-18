@@ -102,7 +102,7 @@ def register_user(request):
                 message=f'Hello {username}, welcome to our Dental Clinic!',
                 from_email='yourgmail@gmail.com',
                 recipient_list=[email],
-                fail_silently=False   # IMPORTANT 
+                fail_silently=True   # IMPORTANT 
             )
         except Exception as mail_error:
             print("Email error:", mail_error)
